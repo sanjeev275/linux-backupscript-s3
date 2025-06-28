@@ -33,14 +33,14 @@ This project is a shell script that automates the backup of critical Linux syste
    - Run manually or set up a cronjob
 3. To set up cron:
    ```bash
-   crontab -e
-   # Add:
+   	crontab -e
+# Add:
    
-   0 0 * * * /path/to/linux_backup.sh >> /var/log/backup-cron.log 2>&1
-   
-	[crontab_view](./screenshot-cron.png)
-	[outputlog](./screenshot-output.png)
-	[S3-view](./screenshot-s3view.png)
+   	0 0 * * * /path/to/linux_backup.sh >> /var/log/backup-cron.log 2>&1
+#Referencepicture:
+	- [crontab_view](./screenshot-cron.png)
+	- [outputlog](./screenshot-output.png)
+	- [S3-view](./screenshot-s3view.png)
 # Notes
 
 *Be sure to grant proper IAM permissions (AmazonS3FullAccess or custom policy).
