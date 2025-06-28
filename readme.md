@@ -35,7 +35,9 @@ This project is a shell script that automates the backup of critical Linux syste
    ```bash
    crontab -e
    # Add:
+   
    0 0 * * * /path/to/linux_backup.sh >> /var/log/backup-cron.log 2>&1
+   
 	[crontab_view](./screenshot-cron.png)
 	[outputlog](./screenshot-output.png)
 	[S3-view](./screenshot-s3view.png)
