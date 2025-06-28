@@ -1,0 +1,1 @@
+0 0 * * * /home/sanju/practice/linux_backup.sh >> /var/log/backup-cron.log 2>&1
